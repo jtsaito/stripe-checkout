@@ -18,6 +18,10 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'unicorn'
 
+
+# Stripe
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
