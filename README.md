@@ -1,7 +1,7 @@
 # stripe-checkout
 This is a minimal example implementation of Stripe Checkout for Rails using the `stripe` gem.
 
-Stripe Checkout (Checkout) is a payment integration for the payment service provider Stripe. The main advantage of Checkout its effortless integration. As opposed to most standard solutions, Checkout does *not* rely on asynchronous backend-to-backend communication by callback. Instead it uses a very simple synchronous solution that works in three steps as follows.
+Stripe Checkout (Checkout) is a payment-integration solution of payment service provider Stripe for the web. The main advantage of Checkout is its effortless integration. As opposed to most standard solutions, Checkout does *not* rely on asynchronous backend-to-backend communication by callback. Instead it uses a simple synchronous solution that works in three steps as follows.
 
 1. Using your public Stripe secret, the client (i.e. browser) posts the banking deatils to Stripe and receives a *Stripe token*.
 2. Next, based on a callback, the users posts the *Strip token* to your controller. 
