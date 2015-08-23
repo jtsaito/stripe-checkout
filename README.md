@@ -5,7 +5,7 @@ Stripe Checkout (Checkout) is a payment-integration solution of payment service 
 
 1. Using your public Stripe secret, the client (i.e. browser) posts the banking deatils to Stripe and receives a *Stripe token*.
 2. Next, based on a callback, the users posts the *Strip token* to your controller. 
-3. The controller action makes a post request to Stripe's API including the ammount to be debited as well as the *Stripe token*. This call is synchronous and you immediately receive notice if the card was debited or some error occured. No further reuqests are required.
+3. The controller action makes a post request to Stripe's API including the ammount to be debited as well as the *Stripe token*. This call is synchronous and you immediately receive notice if the card was debited or some error occured. No further reuqests are required. The response contains all information required for managing the purchase.
 
 Possible disadvantages include the followign three items. 
 1. Only credit cards are supported
